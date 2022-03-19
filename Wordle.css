@@ -1,0 +1,45 @@
+body {
+    
+    background-color: rgb(117, 117, 117);
+}
+
+
+
+#container {
+    width: 650px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 100px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 10px solid black;
+    
+}
+.key {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+}
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+.enterkey {
+    width: 100px;
+    height: 100px;
+    font-size: 25px; 
+}
+
+.deletekey {
+    width: 100px;
+    height: 100px;
+    font-size: 25px; 
+}
