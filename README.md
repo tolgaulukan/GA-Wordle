@@ -14,3 +14,8 @@ A challenge I faced was working out my delete button as it involved using my exi
 You can access my game via this link:
 https://tolgaulukan.github.io/GA-Wordle/
 
+## Further impovements 
+Soon to be added:
+- Random word generator for the correct word used
+- Duplicate letters corrected
+- Not enough letters (if statement) not keeping old text and restarting from box 1
