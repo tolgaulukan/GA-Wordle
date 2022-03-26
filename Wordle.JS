@@ -22,7 +22,7 @@ let guessAmount = 0;
 //used to determine how many guesses the user is up to
   
     for (const button of buttons) {
-        
+
         button.addEventListener ('click', function(){
             if (guessAmount == 0) {
                 let row = rows[0]
@@ -65,22 +65,26 @@ let guessAmount = 0;
     
     }      
 
+
 enter.addEventListener ('click', function(){ 
 
     if (guess.length != 5) {
             alert('Not enough letters');
-            guessAmount--
-            guess = []
+            guessAmount--;
+            guess = [];
     }
     // // if not enough letters wordle will reset that row of letters and notify the user     
     
     if (guessAmount == 5 && !(guess == correctWord)) {
-        alert('You have failed the game')
+        alert('You lost! Hit refresh and try again')
     }
+    
     // if (guess[index] == correctWord[index]) {
     //     alert('YOU WIN!!!')
     // }
-
+    
+    
+    
     for (let index in guess) {
 
         let letter = guess[index]
@@ -154,7 +158,7 @@ deletekey.addEventListener('click', function(){
     rowIndex--
     let box = row[rowIndex];
     guess.pop() 
-    box.textContent = ""
+    box.textContent = ""  
   })
  
 // deletes the text content of the last box and removes the letter from the guess array
