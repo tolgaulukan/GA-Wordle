@@ -2,6 +2,7 @@ const buttons = document.getElementsByClassName('key');
 const boxes = document.querySelectorAll('box');
 const enter = document.getElementById('enterkey');
 const deletekey = document.getElementById('deletekey');
+
 const correctWord = 'coder';
 // example word 
 const row6 = document.querySelector('#row6').children;
@@ -29,7 +30,6 @@ let guessAmount = 0;
                 box.textContent = button.textContent;
                 guess.push(button.textContent);
                 rowIndex++;
-
             } else if (guessAmount == 1)  {
                 let row = rows[1]
                 let box = row[rowIndex];
@@ -96,6 +96,8 @@ enter.addEventListener ('click', function(){
                 row1Letter.classList.add("correct")
             } else if (guessAmount == 0 && correctWord.includes(letter) ) {
                 row1Letter.classList.add("wrongplace")
+            } else if (guessAmount == 0 && !correctWord.includes(letter)) {
+                row1Letter.classList.add("wrong")
             }
 
             // checks which letters in row 1 are correct and each following if statements does the same but for the next line
@@ -104,26 +106,36 @@ enter.addEventListener ('click', function(){
                 row2Letter.classList.add("correct")
             } else if (guessAmount == 1 && correctWord.includes(letter) ) {
                 row2Letter.classList.add("wrongplace")
+            } else if (guessAmount == 1 && !correctWord.includes(letter)) {
+                row2Letter.classList.add("wrong")
             }
             if (guessAmount == 2 && letter == correctLetter) {
                 row3Letter.classList.add("correct")
             } else if (guessAmount == 2 && correctWord.includes(letter) ) {
                 row3Letter.classList.add("wrongplace")
+            } else if (guessAmount == 2 && !correctWord.includes(letter)) {
+                row3Letter.classList.add("wrong")
             }
             if (guessAmount == 3 && letter == correctLetter) {
                 row4Letter.classList.add("correct")
             } else if (guessAmount == 3 && correctWord.includes(letter) ) {
                 row4Letter.classList.add("wrongplace")    
+            } else if (guessAmount == 3 && !correctWord.includes(letter)) {
+                row4Letter.classList.add("wrong")
             }
             if (guessAmount == 4 && letter == correctLetter) {
                 row5Letter.classList.add("correct")
             } else if (guessAmount == 4 && correctWord.includes(letter) ) {
                 row5Letter.classList.add("wrongplace")
+            } else if (guessAmount == 4 && !correctWord.includes(letter)) {
+                row5Letter.classList.add("wrong")
             }
             if (guessAmount == 5 && letter == correctLetter) {
                 row6Letter.classList.add("correct")
             } else if (guessAmount == 5 && correctWord.includes(letter) ) {
                 row6Letter.classList.add("wrongplace")
+            } else if (guessAmount == 5 && !correctWord.includes(letter)) {
+                row6Letter.classList.add("wrong")
             }
             
     }

@@ -13,6 +13,8 @@ h1 {
 div {
     text-align: center;
     color: white;
+    animation-name:inherit;
+    animation-delay: 2s;
 }
 #container {
     width: 650px;
@@ -85,5 +87,8 @@ div {
 }
 .wrongplace {
     background-color: rgb(201, 170, 32);
+}
+.wrong {
+    background-color: grey;
 }
 

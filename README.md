@@ -16,6 +16,6 @@ https://tolgaulukan.github.io/GA-Wordle/
 
 ## Further impovements 
 Soon to be added:
-- Random word generator for the correct word used
-- Duplicate letters corrected
-- Not enough letters (if statement) not keeping old text and restarting from box 1
+- Random word generator for the correct word used.
+- Duplicate letters corrected.
+- Not enough letters (if statement) not keeping old text and restarting from box 1.
